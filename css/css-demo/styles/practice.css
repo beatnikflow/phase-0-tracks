@@ -14,3 +14,7 @@
 .accomplishment {
   font-size:.8em;
 }
+
+#contact-info p:hover {
+  font-weight:bold;
+}
