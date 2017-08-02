@@ -1,10 +1,16 @@
 .octoimage {
   margin: 650px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .octoglasses {
   position: absolute;
-  top: 125px;
+  top: 155px;
   left: 700px;
+}
+
+.octohat {
+  position: absolute;
+  top: 5px;
+  left: 630px;
 }
