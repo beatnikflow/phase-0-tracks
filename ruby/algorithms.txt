@@ -1,0 +1,16 @@
+ELEVATOR ALGORITHM 
+
+- Stand outside elevator and locate wall panel next to elevator containing two arrow buttons. 
+    -  Press 'up arrow' button on wall panel if going to upper floor. 
+    -  Press 'down arrow' button on wall panel if going to lower floor. 
+- When elevator doors open, step inside elevator and locate the numbered button panel.
+- Press the numbered button that equals the same floor number that is being traveled to. 
+- If other people step into elevator:
+    - Move to a different location within the elevator to make room for incoming people.
+    - Until the digital number display reads the same floor number that is being traveled to, remain on elevator. 
+- When digital number display reads the same floor number that is being traveled to, exit elevator when doors open. 
+
+--------------
+
+
+
