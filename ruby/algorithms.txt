@@ -7,10 +7,32 @@ ELEVATOR ALGORITHM
 - Press the numbered button that equals the same floor number that is being traveled to. 
 - If other people step into elevator:
     - Move to a different location within the elevator to make room for incoming people.
-    - Until the digital number display reads the same floor number that is being traveled to, remain on elevator. 
+- Until the digital number display reads the same floor number that is being traveled to, remain on elevator. 
 - When digital number display reads the same floor number that is being traveled to, exit elevator when doors open. 
 
 --------------
+
+COMMON TASK ALGORITHM - WASHING DISHES
+
+- Locate all dishes needing to be washed. 
+- Place all dishes in the sink. 
+- Turn sink faucet on. 
+    - Turn sink faucet handle until temperature reaches warm. 
+- Locate sponge and hold in one hand. 
+- Locate dish soap. 
+    - Pick up dish soap in empty hand. 
+    - Put open tip of dish soap bottle to the middle of the sponge. 
+    - Squeeze dish soap bottle until a quarter-sized amount of soap collects onto sponge. 
+    - When quarter-sized mount of soap has collected on sponge, stop squeezing bottle and replace bottle to it's original location.
+- Pick up one dish in the empty hand and use hand with sponge to come into contact with the center of the front side of the dish. 
+    - Wipe sponge in circular motions beginning in the middle of the dish, working outwards to the perimeter of the dish. 
+    - Repeat circular washing motion on back side of dish. 
+    - Wash until no food particles are visible and dish is cleaned. 
+    - Place dish on drying rack. 
+    - Repeat until there are no more dishes, all dishes are clean, and all dishes are on drying rack. 
+- Return sponge to original location. 
+- Turn sink faucet to off position. 
+
 
 
 
