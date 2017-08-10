@@ -1,9 +1,9 @@
 ELEVATOR ALGORITHM 
 
-- Stand outside elevator and locate wall panel next to elevator containing two arrow buttons. 
+- Stand outside the elevator and locate wall panel next to elevator containing two arrow buttons. 
     -  Press 'up arrow' button on wall panel if going to upper floor. 
     -  Press 'down arrow' button on wall panel if going to lower floor. 
-- When elevator doors open, step inside elevator and locate the numbered button panel.
+- When the elevator doors open, step inside elevator and locate the numbered button panel.
 - Press the numbered button that equals the same floor number that is being traveled to. 
 - If other people step into elevator:
     - Move to a different location within the elevator to make room for incoming people.
@@ -31,7 +31,7 @@ COMMON TASK ALGORITHM - WASHING DISHES
     - Place dish on drying rack. 
     - Repeat until there are no more dishes, all dishes are clean, and all dishes are on drying rack. 
 - Return sponge to original location. 
-- Turn sink faucet to off position. 
+- Turn sink faucet to off position.
 
 
 
