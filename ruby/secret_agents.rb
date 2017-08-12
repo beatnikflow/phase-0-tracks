@@ -1,4 +1,4 @@
-
+# encrypts a string but replacing each letter with that letter's successor in the alphabet
 def encrypt(str)
   index = 0
   while index < str.length
@@ -10,30 +10,39 @@ def encrypt(str)
       index +=1
     end
   end
-
-    puts str
-    str
+  puts "Congrats!!! Your password has been encrypted: #{str}"
+  str
 end
 
-
-#encrypted_str = encrypt()
-
+# decrypts a string by replacing each letter with that letter's predecessor in the alphabet
 def decrypt(new_str)
   alphabet = "abcdefghijklmnopqrstuvwxyz"
   index = 0
   while index < new_str.length
-    new_str[index] = alphabet.index(new_str[index]).to_s
-    new_str[index] = alphabet[new_str[index].to_i - 1]
+    letter_index = alphabet.index(new_str[index])
+    new_str[index] = alphabet[letter_index - 1]
     index +=1
   end
-  puts new_str
+  puts "Congrats!!! Your password has been decrypted: #{new_str}"
   new_str
 end
 
-encrypt("abc")
-encrypt("zed")
-decrypt("bcd")
-decrypt("afe")
+# A few tests below...
+# encrypt("abc")
+# encrypt("zed")
+# decrypt("bcd")
+# decrypt("afe")
+# decrypt(encrypt("swordfish")) # This nested method takes the output of the encrypt method ("txpsegjti") as the argument for the decrypt method...returning the original argument string "swordfish"
 
-
-
+# Driver code below...
+puts "Would you like to encrypt or decrypt a password? Type 'encrypt' or 'decrypt' below:"
+user_choice = gets.chomp
+if user_choice == "encrypt"
+  puts "Great! Please type the password you'd like us to encrypt:"
+  password_to_encrypt = gets.chomp
+  encrypt(password_to_encrypt)
+else
+  puts "Great! Please type the password you'd like us to decrypt:"
+  password_to_decrypt = gets.chomp
+  decrypt(password_to_decrypt)
+end
