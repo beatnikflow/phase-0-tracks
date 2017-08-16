@@ -18,8 +18,15 @@ swapcase
 # "zom".<???>
 # => “zoom”
 
-# "enhance".<???>
-# => "    enhance    "
+
+ "enhance".center(15)
+ => "    enhance    "
+
+def enhance
+  puts "enhance".center(15)
+end
+
+enhance
 
 # "Stop! You’re under arrest!".<???>
 # => "STOP! YOU’RE UNDER ARREST!"
