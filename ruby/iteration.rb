@@ -19,6 +19,13 @@ end
 
 p dog_breeds
 
+dog_breeds.map! do |dogs|
+  puts dogs
+  dogs.next
+end
+
+p dog_breeds
+
 pet_types = {
   cats: "tabby",
   dogs: "corgi",
