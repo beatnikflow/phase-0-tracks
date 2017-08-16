@@ -8,3 +8,19 @@ def animals
 end
 
 animals { |x1, x2| puts "I'm not sure if I want #{x1} or #{x2}" }
+
+dog_breeds = ["terrior", "bassett hound", "golden lab", "rottweiler", "corgi"]
+
+p dog_breeds
+dog_breeds.each do |dogs|
+  dogs.next
+p dogs_breeds
+
+end
+
+pet_types = {
+  cats: tabby
+  dogs: corgi
+  rabbits: long ear
+  fox: fennec
+}
