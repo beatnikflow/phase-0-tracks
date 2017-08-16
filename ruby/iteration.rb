@@ -21,7 +21,7 @@ p dog_breeds
 
 dog_breeds.map! do |dogs|
   puts dogs
-  dogs.rotate
+  dog_breeds.rotate
 end
 
 p dog_breeds
