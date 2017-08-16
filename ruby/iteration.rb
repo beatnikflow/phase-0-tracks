@@ -13,10 +13,11 @@ dog_breeds = ["terrior", "bassett hound", "golden lab", "rottweiler", "corgi"]
 
 p dog_breeds
 dog_breeds.each do |dogs|
+  puts dogs
   dogs.next
-p dog_breeds
-
 end
+
+p dog_breeds
 
 pet_types = {
   cats: "tabby",
