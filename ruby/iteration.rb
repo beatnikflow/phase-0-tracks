@@ -14,7 +14,7 @@ dog_breeds = ["terrior", "bassett hound", "golden lab", "rottweiler", "corgi"]
 p dog_breeds
 dog_breeds.each do |dogs|
   dogs.next
-p dogs_breeds
+p dog_breeds
 
 end
 
