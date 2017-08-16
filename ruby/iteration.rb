@@ -19,8 +19,8 @@ p dogs_breeds
 end
 
 pet_types = {
-  cats: tabby
-  dogs: corgi
-  rabbits: long ear
-  fox: fennec
+  cats: "tabby",
+  dogs: "corgi",
+  rabbits: "long ear",
+  fox: "fennec",
 }
