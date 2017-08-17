@@ -56,3 +56,46 @@ pet_types.map do |species, type|
 end
 
 p pet_types
+
+# ............................................. #
+
+numbers = [ 104, 37, 11, 92, 20912]
+
+numbers.delete_if { |numbers| numbers < 90 }
+
+# .............................................. #
+
+numbers = { "a" => 8737, "b" => 11000, "c" => 11001 }
+
+numbers.delete_if { |key, value| key >= "b" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
