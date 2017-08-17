@@ -7,11 +7,7 @@
  "iNvEsTiGaTiOn".swapcase
  => “InVeStIgAtIoN”
 
-def swapcase
   puts "iNvEsTiGaTiOn".swapcase
-end
-
-swapcase
 
 # ....................................... #
 
@@ -24,30 +20,36 @@ swapcase
  "enhance".center(15)
  => "    enhance    "
 
-def enhance
-  puts "enhance".center(15)
-end
 
-enhance
+  puts "enhance".center(15)
+
 
 # ....................................... #
 
  "Stop! You’re under arrest!".upcase
  => "STOP! YOU’RE UNDER ARREST!"
 
-def upcase
+
   puts "Stop! You're under arrest!".upcase
-end
+
 
 # ....................................... #
 
-# "the usual".<???>
-#=> "the usual suspects"
+  "the usual".to_s
+=> "the usual suspects"
+
+
+  new_str = "the usual"
+  new_str.to_s + " suspects"
+
 
 # ....................................... #
 
-# " suspects".<???>
-# => "the usual suspects"
+ " suspects".to_s
+ => "the usual suspects"
+
+ new_str = " suspects"
+ "the usual" + new_str.to_s
 
 # ....................................... #
 
