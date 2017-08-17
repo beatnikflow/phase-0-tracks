@@ -53,8 +53,8 @@
 
 # ....................................... #
 
-# "The case of the disappearing last letter".<???>
-# => "The case of the disappearing last lette"
+ "The case of the disappearing last letter".chop
+ => "The case of the disappearing last lette"
 
 # ....................................... #
 
