@@ -50,12 +50,6 @@ end
 puts "This is after the hash change"
 p pet_types
 
-pet_types.map do |species, type|
-  puts type
-  type = "orange #{type}"
-end
-
-p pet_types
 
 # ............................................. #
 
@@ -103,9 +97,16 @@ p number.fetch("c")
 
 # ................................................. #
 
-a = [1, 2, 3, 4, 5, 0]
-p a.drop_while {|i| i < 3 }
+number = [ 100, 101, 102, 103, 104, 0 ]
+p number.drop_while {|i| i < 102 }
 
+# ................................................. #
+
+food = { "c" => "bacon", "m" => "hot links", "s" => "funnel cake", "y" => "churros"}
+
+food.keep_if { |key, value| key != "c" }
+
+p food
 
 
 
