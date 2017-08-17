@@ -59,9 +59,11 @@ p pet_types
 
 # ............................................. #
 
-numbers = [ 104, 37, 11, 92, 20912]
+numbers = [104, 37, 11, 92, 20912]
 
 numbers.delete_if { |numbers| numbers < 90 }
+
+p numbers
 
 # .............................................. #
 
@@ -69,7 +71,37 @@ numbers = { "a" => 8737, "b" => 11000, "c" => 11001 }
 
 numbers.delete_if { |key, value| key >= "b" }
 
+p numbers
 
+# .............................................. #
+
+letters = ["a","d","m","z"]
+
+letters.keep_if { |endpoints| endpoints == "a" }
+
+p letters
+
+# .............................................. #
+
+letters = { "c" => "joe", "m" => "brittany", "s" => "matt", "y" => "yourmom"}
+
+letters.keep_if { |key, value| key == "y" }
+
+p letters
+
+# ............................................... #
+
+numbers = [ 52, 111, 567, 1011 ]
+
+p numbers.fetch(0)
+
+# ................................................ #
+
+number = { "a" => 2, "b" => 3, "c" => 5, "d" => 8 }
+
+p number.fetch("c")
+
+# ................................................. #
 
 
 
