@@ -7,7 +7,9 @@
  "iNvEsTiGaTiOn".swapcase
  => “InVeStIgAtIoN”
 
+# Method:
   puts "iNvEsTiGaTiOn".swapcase
+  => “InVeStIgAtIoN”
 
 # ....................................... #
 
@@ -20,8 +22,9 @@
  "enhance".center(15)
  => "    enhance    "
 
-
+# Method:
   puts "enhance".center(15)
+  => "    enhance    "
 
 
 # ....................................... #
@@ -29,8 +32,9 @@
  "Stop! You’re under arrest!".upcase
  => "STOP! YOU’RE UNDER ARREST!"
 
-
+# Method:
   puts "Stop! You're under arrest!".upcase
+  => "STOP! YOU’RE UNDER ARREST!"
 
 
 # ....................................... #
@@ -38,9 +42,10 @@
   "the usual".to_s
 => "the usual suspects"
 
-
+# Method:
   new_str = "the usual"
   new_str.to_s + " suspects"
+  => "the usual suspects"
 
 
 # ....................................... #
@@ -48,8 +53,10 @@
  " suspects".to_s
  => "the usual suspects"
 
+# Method:
  new_str = " suspects"
  "the usual" + new_str.to_s
+ => "the usual suspects"
 
 # ....................................... #
 
@@ -66,14 +73,20 @@
 "Elementary,    my   dear        Watson!".split.join
 => "Elementary, my dear Watson!"
 
-str = "Elementary,    my   dear        Watson!"
-str.split.join(" ")
+# Method:
+  str = "Elementary,    my   dear        Watson!"
+  str.split.join(" ")
+  => "Elementary, my dear Watson!"
 
 # ....................................... #
 
-# "z".<???>
-# => 122
+"z".ord
+=> 122
 # (What is the significance of the number 122 in relation to the character z?)
+
+# Method:
+"z".ord
+=> 122
 
 # ....................................... #
 
