@@ -22,15 +22,18 @@ client_name = gets.chomp
 
 puts "Age:"
 client_age = gets.chomp
+client_age = client_age.to_i
 
 puts "# of Children:"
 children_num = gets.chomp
+children_num = children_num.to_i
 
 puts "Decor Theme:"
 decor_theme = gets.chomp
 
 puts "Number of Rooms:"
 room_num = gets.chomp
+room_num = room_num.to_i
 
 puts "Likes Neutral Colors (True/False)"
 netural_colors = gets.chomp
