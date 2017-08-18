@@ -14,3 +14,29 @@
 # Print latest version of hash and exit program.
 
 # ........................................................ #
+
+puts "Client Interior Design Form"
+
+puts "Client Name:"
+client_name = gets.chomp
+
+puts "Age:"
+client_age = gets.chomp
+
+puts "# of Children:"
+children_num = gets.chomp
+
+puts "Decor Theme:"
+decor_theme = gets.chomp
+
+puts "Number of Rooms:"
+room_num = gets.chomp
+
+puts "Likes Neutral Colors (True/False)"
+netural_colors = gets.chomp
+
+puts "Likes Bright Colors (True/False)"
+bright_colors = gets.chomp
+
+puts "Is a Fan of Art (True/False)"
+art_fan = gets.chomp
