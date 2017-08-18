@@ -34,45 +34,32 @@
 
 puts "Client Interior Design Form"
 
-client_form = []
+puts "Client Interior Design Form"
+
+client_form = {}
 
 puts "Client Name:"
-client_name = gets.chomp
-client_form << client_name
+client_form[:name] = gets.chomp
 
 puts "Age:"
-client_age = gets.chomp
-client_age = client_age.to_i
-client_form << client_age
+client_form[:age] = gets.chomp.to_i
 
 puts "# of Children:"
-children_num = gets.chomp
-children_num = children_num.to_i
-client_form << children_num
+client_form[:children] = gets.chomp.to_i
 
 puts "Decor Theme:"
-decor_theme = gets.chomp
-client_form << decor_theme
+client_form[:decor] = gets.chomp
 
 puts "Number of Rooms:"
-room_num = gets.chomp
-room_num = room_num.to_i
-client_form << room_num
+client_form[:rooms] = gets.chomp.to_i
 
 puts "Likes Neutral Colors (True/False)"
-neutral_colors = gets.chomp
-client_form << neutral_colors
+client_form[:netural] = gets.chomp
 
 puts "Likes Bright Colors (True/False)"
-bright_colors = gets.chomp
-client_form << bright_colors
+client_form[:bright] = gets.chomp
 
 puts "Is a Fan of Art (True/False)"
-art_fan = gets.chomp
-client_form << art_fan
-
-p client_form
-
-
+client_form[:art] = gets.chomp
 
 p client_form
