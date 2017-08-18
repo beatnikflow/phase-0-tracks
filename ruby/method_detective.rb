@@ -63,8 +63,11 @@
 
 # ....................................... #
 
-# "Elementary,    my   dear        Watson!".<???>
-# => "Elementary, my dear Watson!"
+"Elementary,    my   dear        Watson!".split.join
+=> "Elementary, my dear Watson!"
+
+str = "Elementary,    my   dear        Watson!"
+str.split.join(" ")
 
 # ....................................... #
 
