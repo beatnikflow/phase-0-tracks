@@ -63,3 +63,12 @@ puts "Is a Fan of Art (True/False)"
 client_form[:art] = gets.chomp
 
 p client_form
+
+puts "Any information needing updating? Type key and value needing updates, or 'none' if finished."
+update_info = gets.chomp
+  if update_info = "none"
+    p client_form
+  else
+
+    p client_form
+  end
