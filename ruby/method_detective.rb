@@ -65,8 +65,13 @@
 
 # ....................................... #
 
-# "The mystery of the missing first letter".<???>
-# => "he mystery of the missing first letter"
+"The mystery of the missing first letter".slice!
+=> "he mystery of the missing first letter"
+
+# Method:
+str = "The mystery of the missing first letter"
+str.slice!(0)
+str
 
 # ....................................... #
 
