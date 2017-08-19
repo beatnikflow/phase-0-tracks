@@ -24,18 +24,20 @@
 # # Under the book_shelf, nest a formal name of "Book Shelf". Within that hash, nest bookshelf_supplies containing: "books" and "videos".
 
 # #  - Books will contain:
-#         number of books
-#       "Dr. Seuss",
-#       "The Giving Tree",
-#       "The Stinky Cheese Man",
-#       "Ramona Quimby"
+#       number_of_books
+#        favorite_books:
+#           "Dr. Seuss",
+#           "The Giving Tree",
+#           "The Stinky Cheese Man",
+#           "Ramona Quimby"
 
 # #  - Videos will contain:
-#        number of videos
-#       "School House Rock",
-#       "Mr. Holland's Opus",
-#       "Bill Nye the Science Guy",
-#       "The Magic School Bus"
+#        number_of_videos
+#        favorite_videos
+#           "School House Rock",
+#           "Mr. Holland's Opus",
+#           "Bill Nye the Science Guy",
+#           "The Magic School Bus"
 
 # # Under backpacks, nest a formal name of "Backpacks". Within that hash, nest backpack_contents containing:
 #   "late homework",
@@ -73,15 +75,23 @@ classroom = {
           "fidget spinner",
           "used gum underneath desk"
         ]
-    }
+    },
     book_shelf: {
       formal_name: 'Book Shelf',
-        bookshelf_supplies: {}
-    }
+        bookshelf_supplies: {
+          number_of_books: 42,
+          favorite_books: [
+            "Dr. Seuss",
+            "The Giving Tree",
+            "The Stinky Cheese Man",
+            "Ramona Quimby"
+          ]
+        }
+    },
     backpacks: {
       formal_name: 'Backpacks',
         backpack_contents: {}
-    }
+    },
     chalkboard: {
       formal_name: 'Chalkboard',
         chalkboard_supplies: {}
