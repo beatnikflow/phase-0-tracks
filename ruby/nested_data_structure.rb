@@ -133,6 +133,6 @@ p classroom[:book_shelf][:bookshelf_supplies][:number_of_videos]
 
 p classroom[:book_shelf][:bookshelf_supplies][:favorite_videos][0]
 
-p classroom[:backpacks][:backpack_contents][1]
+p classroom[:backpacks][:backpack_contents][2]
 
-p classroom[:chalkboard][:chalkboard_supplies][2]
+p classroom[:chalkboard][:chalkboard_supplies][0]
