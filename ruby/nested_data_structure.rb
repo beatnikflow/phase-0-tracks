@@ -116,3 +116,23 @@ classroom = {
         ]
     }
 }
+
+p classroom
+
+p classroom[:teacher_desk][:teacher_supplies]
+
+p classroom[:student_desk][:desk_contents][3]
+
+p classroom[:book_shelf][:bookshelf_supplies][:number_of_books]
+
+p classroom[:book_shelf][:bookshelf_supplies][:favorite_books]
+
+p classroom[:book_shelf][:bookshelf_supplies][:favorite_books][2]
+
+p classroom[:book_shelf][:bookshelf_supplies][:number_of_videos]
+
+p classroom[:book_shelf][:bookshelf_supplies][:favorite_videos][0]
+
+p classroom[:backpacks][:backpack_contents][1]
+
+p classroom[:chalkboard][:chalkboard_supplies][1]
