@@ -54,8 +54,13 @@
 classroom = {
     teacher_desk: {
       formal_name: 'Teacher Desk',
-        teacher_supplies: {}
-    }
+        teacher_supplies: [
+          "homework to grade",
+          "apple",
+          "stickers",
+          "pens and pencils"
+        ]
+    },
     student_desk: {
       formal_name: 'Student Desk',
         student_supplies: {}
