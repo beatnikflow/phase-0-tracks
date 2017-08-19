@@ -51,3 +51,10 @@
 
 # ........................................................ #
 
+classroom = {
+    teacher_desk: {}
+    student_desk: {}
+    book_shelf: {}
+    backpacks: {}
+    chalkboard: {}
+}
