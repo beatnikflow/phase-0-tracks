@@ -52,9 +52,19 @@
 # ........................................................ #
 
 classroom = {
-    teacher_desk: {}
-    student_desk: {}
-    book_shelf: {}
-    backpacks: {}
-    chalkboard: {}
+    teacher_desk: {
+      formal_name: 'Teacher Desk'
+    }
+    student_desk: {
+      formal_name: 'Student Desk'
+    }
+    book_shelf: {
+      formal_name: 'Book Shelf'
+    }
+    backpacks: {
+      formal_name: 'Backpacks'
+    }
+    chalkboard: {
+      formal_name: 'Chalkboard'
+    }
 }
