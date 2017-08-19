@@ -86,7 +86,15 @@ classroom = {
             "The Stinky Cheese Man",
             "Ramona Quimby"
           ]
-        }
+          number_of_videos: 19,
+          favorite_videos: [
+            "School House Rock",
+            "Mr. Holland's Opus",
+            "Bill Nye the Science Guy",
+            "The Magic School Bus"
+          ]
+
+        },
     },
     backpacks: {
       formal_name: 'Backpacks',
