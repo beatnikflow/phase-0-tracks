@@ -21,7 +21,7 @@
 #   "used gum underneath desk",
 #   "fidget spinner"
 
-# # Under the book_shelf, nest a formal name of "Book Shelf". Within that hash, nest "books" and "videos".
+# # Under the book_shelf, nest a formal name of "Book Shelf". Within that hash, nest bookshelf_supplies containing: "books" and "videos".
 
 # #  - Books will contain:
 #       "Dr. Seuss",
@@ -42,7 +42,7 @@
 #   "lunch box",
 #   "report card"
 
-# # Under chalkboard, nest a formal name of "Chalkboard". Within that hash, nest chalkboard_contents containing:
+# # Under chalkboard, nest a formal name of "Chalkboard". Within that hash, nest chalkboard_supplies containing:
 #   "white chalk",
 #   "colored chalk",
 #   "eraser",
@@ -53,18 +53,23 @@
 
 classroom = {
     teacher_desk: {
-      formal_name: 'Teacher Desk'
+      formal_name: 'Teacher Desk',
+        teacher_supplies: {}
     }
     student_desk: {
-      formal_name: 'Student Desk'
+      formal_name: 'Student Desk',
+        student_supplies: {}
     }
     book_shelf: {
-      formal_name: 'Book Shelf'
+      formal_name: 'Book Shelf',
+        bookshelf_supplies: {}
     }
     backpacks: {
-      formal_name: 'Backpacks'
+      formal_name: 'Backpacks',
+        backpack_contents: {}
     }
     chalkboard: {
-      formal_name: 'Chalkboard'
+      formal_name: 'Chalkboard',
+        chalkboard_supplies: {}
     }
 }
