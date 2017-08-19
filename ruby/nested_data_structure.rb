@@ -107,6 +107,12 @@ classroom = {
     },
     chalkboard: {
       formal_name: 'Chalkboard',
-        chalkboard_supplies: {}
+        chalkboard_supplies: [
+          "white chalk",
+          "colored chalk",
+          "eraser",
+          "giant ruler",
+          "pointer"
+        ]
     }
 }
