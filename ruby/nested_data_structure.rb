@@ -13,7 +13,7 @@
 #   "stickers",
 #   "pens and pencils"
 
-# # Under the student_desk, nest a formal name of "Student Desk". Within that hash, nest student_supplies containing:
+# # Under the student_desk, nest a formal name of "Student Desk". Within that hash, nest desk_contents containing:
 #   "assignments",
 #   "homework",
 #   "pencils",
@@ -24,12 +24,14 @@
 # # Under the book_shelf, nest a formal name of "Book Shelf". Within that hash, nest bookshelf_supplies containing: "books" and "videos".
 
 # #  - Books will contain:
+#         number of books
 #       "Dr. Seuss",
 #       "The Giving Tree",
 #       "The Stinky Cheese Man",
 #       "Ramona Quimby"
 
 # #  - Videos will contain:
+#        number of videos
 #       "School House Rock",
 #       "Mr. Holland's Opus",
 #       "Bill Nye the Science Guy",
@@ -63,7 +65,14 @@ classroom = {
     },
     student_desk: {
       formal_name: 'Student Desk',
-        student_supplies: {}
+        desk_contents: [
+          "assignments",
+          "homework",
+          "pencils",
+          "random broken crayons",
+          "fidget spinner",
+          "used gum underneath desk"
+        ]
     }
     book_shelf: {
       formal_name: 'Book Shelf',
