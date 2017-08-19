@@ -85,7 +85,7 @@ classroom = {
             "The Giving Tree",
             "The Stinky Cheese Man",
             "Ramona Quimby"
-          ]
+          ],
           number_of_videos: 19,
           favorite_videos: [
             "School House Rock",
@@ -93,12 +93,17 @@ classroom = {
             "Bill Nye the Science Guy",
             "The Magic School Bus"
           ]
-
-        },
+        }
     },
     backpacks: {
       formal_name: 'Backpacks',
-        backpack_contents: {}
+        backpack_contents: [
+          "late homework",
+          "field-trip permission slip",
+          "pencils",
+          "lunch box",
+          "report card"
+        ]
     },
     chalkboard: {
       formal_name: 'Chalkboard',
