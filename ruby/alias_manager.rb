@@ -39,6 +39,19 @@ reverse_sent = reverse(spyname)
 reverse_sent.split.map{|word| reverse(word)}.join(" ")
 
 
+def vowelreplace(str)
+  vowels = 'aeiou'
+  replacements = 'eioua'
+  str.tr(vowels, replacements)
+end
 
-def vowel(string)
+vowelreplace(spyname)
+
+def consonantreplace(str)
+  consonants = 'bcdfghjklmnpqrstvwxyz'
+  replacements = 'cdfghjklmnpqrstvwxyzb'
+  str.tr(consonants, replacements)
+end
+
+consonantreplace(spyname)
 
