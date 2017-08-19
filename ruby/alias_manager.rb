@@ -20,7 +20,8 @@
 
 # -------------------------------------------------------- #
 
-
+puts "Hello SPY! What is your REAL name?"
+spyname = gets.chomp
 
 def reverse(string)
     reverse = ""
@@ -31,9 +32,6 @@ def reverse(string)
     end
     return reverse
 end
-
-puts "Hello SPY! What is your REAL name?"
-spyname = gets.chomp
 
 reverse_sent = reverse(spyname)
 reverse_sent.split.map{|word| reverse(word)}.join(" ")
