@@ -34,22 +34,27 @@ def reverse(string)
 end
 
 reverse_sent = reverse(spyname)
-reverse_sent.split.map{|word| reverse(word)}.join(" ")
+reverse_sent.split.map {|word| reverse(word)}.join(" ")
 
 
-def vowelreplace(str)
+def vowelreplace(full_name)
   vowels = 'aeiou'
   replacements = 'eioua'
-  str.tr(vowels, replacements)
+  full_name.tr(vowels, replacements)
 end
 
-vowelreplace(spyname)
+name_no_vowels = vowelreplace(full_name)
 
-def consonantreplace(str)
+p name_no_vowels
+
+def consonantreplace(name_no_vowels)
   consonants = 'bcdfghjklmnpqrstvwxyz'
   replacements = 'cdfghjklmnpqrstvwxyzb'
-  str.tr(consonants, replacements)
+  name_no_vowels.tr(consonants, replacements)
 end
 
-consonantreplace(spyname)
+new_spyname = consonantreplace(name_no_vowels)
+
+p new_spyname
+
 
