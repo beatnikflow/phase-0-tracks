@@ -1,4 +1,4 @@
-# Take a spy's real name and write a method that cretes a fake name by doing the following:
+# Take a spy's real name and write a method that creates a fake name by doing the following:
 
 #     - Swapping first and last name.
 
@@ -12,7 +12,7 @@
 
 # 2. Prompt user for name
 
-# 3. Name string words will be swapped by reverse method.
+# 3. Name string words will be swapped.
 
 # 4. Define a method that takes reversed name string and changes vowels to the next successive vowel.
 
@@ -20,41 +20,109 @@
 
 # -------------------------------------------------------- #
 
-puts "Hello SPY! What is your REAL name?"
-spyname = gets.chomp
+puts "What is your full name?"
+full_name = gets.chomp
 
-def reverse(string)
-    reverse = ""
-    index = 0
-    while index < string.length
-       reverse = string[index] + reverse
-       index += 1
-    end
-    return reverse
-end
+# Splitting name up into an array
+name_swap = full_name.split(' ')
 
-reverse_sent = reverse(spyname)
-reverse_sent.split.map {|word| reverse(word)}.join(" ")
+# Swapping the index of the first and last name
+name_swap[0], name_swap[1] = name_swap[1], name_swap[0]
+
+p name_swap
+
+# Joining the new name swap back into a string
+name_join = name_swap.join(" ")
+
+p name_join
+
+# Splitting the swapped name into an array of characters to iterate through
+name_split = name_join.split("")
+
+p name_split
+
+# Time to change the vowels!
+vowel_change = name_split
+
+vowel_change.map! { |element|
+  if(element == "a")
+      "e" # change "hello" to "hi"
+  elsif(element == "e")
+        "i"
+  elsif(element == "i")
+        "o"
+  elsif(element == "o")
+        "u"
+  elsif(element == "u")
+        "a"
+  else
+      element
+  end
+}
+
+p vowel_change
+
+# Time to change the consonants!
+consonant_change = vowel_change
+
+consonant_change.map! { |element|
+  if(element == "b")
+      "c" # change "hello" to "hi"
+  elsif(element == "c")
+        "d"
+  elsif(element == "d")
+        "f"
+  elsif(element == "f")
+        "g"
+  elsif(element == "g")
+        "h"
+  elsif(element == "h")
+        "j"
+  elsif(element == "j")
+        "k"
+  elsif(element == "k")
+        "l"
+  elsif(element == "l")
+        "m"
+  elsif(element == "m")
+        "n"
+  elsif(element == "n")
+        "p"
+  elsif(element == "p")
+        "q"
+  elsif(element == "q")
+        "r"
+  elsif(element == "r")
+        "s"
+  elsif(element == "s")
+        "t"
+  elsif(element == "t")
+        "v"
+  elsif(element == "v")
+        "w"
+  elsif(element == "w")
+        "x"
+  elsif(element == "x")
+        "y"
+  elsif(element == "y")
+        "z"
+  elsif(element == "z")
+        "b"
+  else
+      element
+  end
+}
+
+p consonant_change
+
+# Join the changes back into a string
+alias_name = consonant_change.join("")
+
+p alias_name
 
 
-def vowelreplace(full_name)
-  vowels = 'aeiou'
-  replacements = 'eioua'
-  full_name.tr(vowels, replacements)
-end
 
-name_no_vowels = vowelreplace(full_name)
 
-p name_no_vowels
 
-def consonantreplace(name_no_vowels)
-  consonants = 'bcdfghjklmnpqrstvwxyz'
-  replacements = 'cdfghjklmnpqrstvwxyzb'
-  name_no_vowels.tr(consonants, replacements)
-end
-
-new_spyname = consonantreplace(name_no_vowels)
-
-p new_spyname
 
 
