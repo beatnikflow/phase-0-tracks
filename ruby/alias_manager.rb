@@ -20,9 +20,12 @@
 
 # -------------------------------------------------------- #
 
-# Prompt user for a full name
-puts "What is your full name?"
-full_name = gets.chomp
+# Create a loop that allows user to continue entering names until they type 'quit'
+
+loop do
+  puts "Enter a full name! (Type 'quit' when done!)"
+  full_name = gets.chomp
+  break if full_name == 'quit'
 
 # Split the name up into an array.
 name_swap = full_name.downcase.split(' ')
@@ -126,13 +129,12 @@ p newname
 # Capitalize the first character of each name
 capitalized_name = newname.split.map { |i| i.capitalize }.join(' ')
 
-p capitalized_name
-
 # Assign final alias_name variable to the capitalized name.
 alias_name = capitalized_name
 
 p alias_name
 
+end
 
 
 
