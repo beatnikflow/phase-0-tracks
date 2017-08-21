@@ -8,15 +8,35 @@
 
 # ALGORITHM #
 
-# 1. Define a method that will swap words in a user input string.
+# 1. Create an empty array for names.
 
-# 2. Prompt user for name
+# 2. Create a loop do that prompts user for a full_name.
 
-# 3. Name string words will be swapped.
+# 3. Break loop when 'quit' is entered and print name array. Push full_names to empty names array.
 
-# 4. Define a method that takes reversed name string and changes vowels to the next successive vowel.
+# 4. Downcase full_name, split the array into characters using .split and assign a new variable of name_swap
 
-# 5. Define a method that takes reversed name string with modified vowels and change consonants to the next successive consonant.
+# 5. Swap the index of the first and last name.
+
+# 6. Join the characters back together with .join and assign a new variable of name_join.
+
+# 7. Split the characters into an array using .split for iteration and assign a new variable of name_split
+
+# 8. Rename name_split to variable vowel_change. Use .map, a hash, block statement and if/else statements to replace each vowel to the next successive vowel.
+
+# 9. Rename vowel_change to consonant_change. Use .map, a hash, block statement and if/else statements to replace each consonant to the next successive consonant.
+
+# 10. Join array of characters back together with .join and rename consonant_change to newname variable.
+
+# 11. Use .split, .map and a hash to capitalize the first letter of each word and then .join to join back together.
+
+# 12. Rename newname to capitalized_name.
+
+# 13. Rename capitalized_name to final variable name of alias_name and push alias names to names array.
+
+# 14. Use the statement: puts "The spy #{full_name} now has an encrypted name of #{alias_name}"
+
+# 15. Print all data entered by user.
 
 # -------------------------------------------------------- #
 
