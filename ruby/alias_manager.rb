@@ -20,103 +20,116 @@
 
 # -------------------------------------------------------- #
 
+# Prompt user for a full name
 puts "What is your full name?"
 full_name = gets.chomp
 
-# Splitting name up into an array
-name_swap = full_name.split(' ')
+# Split the name up into an array.
+name_swap = full_name.downcase.split(' ')
 
-# Swapping the index of the first and last name
+p name_swap
+
+# Swap the index of the first and last name.
 name_swap[0], name_swap[1] = name_swap[1], name_swap[0]
 
 p name_swap
 
-# Joining the new name swap back into a string
+# Join the new name swap back into a string.
 name_join = name_swap.join(" ")
 
 p name_join
 
-# Splitting the swapped name into an array of characters to iterate through
+# Split the swapped name into an array of characters to iterate through.
 name_split = name_join.split("")
 
 p name_split
 
-# Time to change the vowels!
+# Change the vowels to their successive vowels
 vowel_change = name_split
 
-vowel_change.map! { |element|
-  if(element == "a")
+vowel_change.map! { |letter|
+  if(letter == "a")
       "e" # change "hello" to "hi"
-  elsif(element == "e")
+  elsif(letter == "e")
         "i"
-  elsif(element == "i")
+  elsif(letter == "i")
         "o"
-  elsif(element == "o")
+  elsif(letter == "o")
         "u"
-  elsif(element == "u")
+  elsif(letter == "u")
         "a"
   else
-      element
+      letter
   end
 }
 
 p vowel_change
 
-# Time to change the consonants!
+# Change the consonants to their successive consonant
 consonant_change = vowel_change
 
-consonant_change.map! { |element|
-  if(element == "b")
+consonant_change.map! { |letter|
+  if(letter == "b")
       "c" # change "hello" to "hi"
-  elsif(element == "c")
+  elsif(letter == "c")
         "d"
-  elsif(element == "d")
+  elsif(letter == "d")
         "f"
-  elsif(element == "f")
+  elsif(letter == "f")
         "g"
-  elsif(element == "g")
+  elsif(letter == "g")
         "h"
-  elsif(element == "h")
+  elsif(letter == "h")
         "j"
-  elsif(element == "j")
+  elsif(letter == "j")
         "k"
-  elsif(element == "k")
+  elsif(letter == "k")
         "l"
-  elsif(element == "l")
+  elsif(letter == "l")
         "m"
-  elsif(element == "m")
+  elsif(letter == "m")
         "n"
-  elsif(element == "n")
+  elsif(letter == "n")
         "p"
-  elsif(element == "p")
+  elsif(letter == "p")
         "q"
-  elsif(element == "q")
+  elsif(letter == "q")
         "r"
-  elsif(element == "r")
+  elsif(letter == "r")
         "s"
-  elsif(element == "s")
+  elsif(letter == "s")
         "t"
-  elsif(element == "t")
+  elsif(letter == "t")
         "v"
-  elsif(element == "v")
+  elsif(letter == "v")
         "w"
-  elsif(element == "w")
+  elsif(letter == "w")
         "x"
-  elsif(element == "x")
+  elsif(letter == "x")
         "y"
-  elsif(element == "y")
+  elsif(letter == "y")
         "z"
-  elsif(element == "z")
+  elsif(letter == "z")
         "b"
   else
-      element
+      letter
   end
 }
 
 p consonant_change
 
-# Join the changes back into a string
-alias_name = consonant_change.join("")
+# Join the characters back into a string
+newname = consonant_change.join("")
+
+p newname
+
+# Capitalize the first character of each name
+capitalized_name = newname.split.map { |i| i.capitalize }.join(' ')
+
+p capitalized_name
+
+# Assign final alias_name variable to the capitalized name.
+alias_name = capitalized_name
 
 p alias_name
 
