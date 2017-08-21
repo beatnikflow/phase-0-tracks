@@ -22,10 +22,14 @@
 
 # Create a loop that allows user to continue entering names until they type 'quit'
 
+names = []
+
 loop do
   puts "Enter a full name! (Type 'quit' when done!)"
   full_name = gets.chomp
   break if full_name == 'quit'
+  names << full_name
+
 
 # Split the name up into an array.
 name_swap = full_name.downcase.split(' ')
@@ -134,9 +138,13 @@ alias_name = capitalized_name
 
 p alias_name
 
+names << alias_name
+
+puts "The spy #{full_name} now has an encrypted name of #{alias_name}"
+
 end
 
-
+p names
 
 
 
