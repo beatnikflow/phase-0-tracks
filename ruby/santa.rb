@@ -3,7 +3,7 @@ class Santa
     puts "Initializing Santa instance..."
   end
 
-  def speak(greeting)
+  def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
   end
 
@@ -13,5 +13,5 @@ class Santa
 end
 
 santa = Santa.new
-santa.greeting
+santa.speak
 santa.eat_milk_and_cookies("snickerdoodle")
