@@ -165,5 +165,3 @@ puts "The spy #{full_name} now has an encrypted name of #{alias_name}"
 end
 
 p names
-
-
