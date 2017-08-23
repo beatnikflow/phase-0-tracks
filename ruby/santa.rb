@@ -26,6 +26,10 @@ class Santa
     @ethnicity
   end
 
+  def age
+    @age
+  end
+
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
   end
@@ -36,6 +40,10 @@ class Santa
 
   def reindeer_ranking
     reindeer = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  end
+
+  def age=(celebrate_birthday)
+    @age = celebrate_birthday
   end
 
 end
@@ -49,18 +57,14 @@ santas << Santa.new("female", "model-like", "tall", "prefer not to say")
 santas << Santa.new("gender fluid", "muscular", "Shaq-height", "Mystical Creature (unicorn)")
 santas << Santa.new("N/A", "N/A", "N/A", "N/A")
 
-# Other Route:
-# santas = []
-# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-# example_genders.length.times do |i|
-#   santas << Santa.new(example_genders[i], example_ethnicities[i])
-# end
 
 santas.each do |santa|
-  puts "I'm a #{santa.gender}, #{santa.weight}, #{santa.height}, #{santa.ethnicity} Santa"
+  santa.age = 1
+  puts "I'm a #{santa.age} year old #{santa.gender}, #{santa.weight}, #{santa.height}, #{santa.ethnicity} Santa"
   santa.speak
   santa.eat_milk_and_cookies("snickerdoodle")
   puts "There are #{santas.length} Santa instances in the array"
   puts "----"
 end
+
+
