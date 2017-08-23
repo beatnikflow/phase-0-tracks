@@ -1,6 +1,8 @@
 
 
 class Santa
+  attr_accessor :name, :gender, :weight, :height, :ethnicity, :age
+
   def initialize(gender, weight, height, ethnicity)
     puts "Initializing Santa instance..."
     @gender = gender
@@ -10,25 +12,25 @@ class Santa
     @age = 0
   end
 
-  def gender
-    @gender
-  end
+  # def gender
+  #   @gender
+  # end
 
-  def weight
-    @weight
-  end
+  # def weight
+  #   @weight
+  # end
 
-  def height
-    @height
-  end
+  # def height
+  #   @height
+  # end
 
-  def ethnicity
-    @ethnicity
-  end
+  # def ethnicity
+  #   @ethnicity
+  # end
 
-  def age
-    @age
-  end
+  # def age
+  #   @age
+  # end
 
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
@@ -45,6 +47,12 @@ class Santa
   def age=(celebrate_birthday)
     @age = celebrate_birthday
   end
+
+  # def get_mad_at(reindeer_ranking, reindeer_name)
+  #   # reindeer_ranking.insert(-1, reindeer_ranking.delete_at(0))
+
+  # end
+
 
 end
 
@@ -66,5 +74,8 @@ santas.each do |santa|
   puts "There are #{santas.length} Santa instances in the array"
   puts "----"
 end
+
+# p santa.get_mad_at("Rudolph")
+
 
 
