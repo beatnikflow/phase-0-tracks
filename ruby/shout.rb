@@ -10,6 +10,6 @@ module Happy
   end
 end
 
-Shout.yell_angrily("I'm cranky")
+p Shout.yell_angrily("I'm cranky")
 
-Shout.yelling_happily("I'm happy")
+p Happy.yell_happily("I'm happy")
