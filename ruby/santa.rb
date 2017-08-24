@@ -1,9 +1,46 @@
+# RELEASE 0 #
+
+# - Create a Santa class.
+# - Create a speak method that prints "Ho, ho ho! Haaaapy holidays!"
+# - Create an eat_milk_and_cookies method that takes a cookie type as a parameter and prints "That was a good <type of cookie>!"
+# - Create an initialize method that prints "Initializing Santa instance..."
+
+# ----------------------------------------------------------------------
+
+# RELEASE 1 #
+
+# - Update initial method so that gender and ethnicity are passed on initialization.
+# - Insert @reindeer_ranking array into initialize method.
+# - Add default @age = 0 to initialize method.
+# - Add example initialization code outside of class that pushes various gender and ethnicity attributes to an empty santas array.
+# - Use a santas.each method to iterate through the santas array and print information about each Santa. Call all the instance methods.
+
+# - Add more diverse initialization methods: (weight, height)
+
+# ----------------------------------------------------------------------
+
+# RELEASE 2 #
+
+# - Define a celebrate_birthday attribute method that changes Santa's age to 1.
+# - Define a get_mad_at method that takes a Reindeer's name as an argument and moves that reindeer to the last place in the reindeer_ranking array.
+# - Give a setter method to @gender.
+# - Add getter methods for @age and @ethnicity
+
+# ----------------------------------------------------------------------
+
+# RELEASE 3 #
+
+# - Refactor code with attr_reader and attr_accessor
+
+
+# ----------------------------------------------------------------------
+
 # RELEASE 4 #
 
-# Create multiple Santas.
-# Methods .times, do |block|, .sample
-# Items: example_genders and example_ethnicity arrays, age array?
-# puts 'I am a (random_age), (example_gender random), (example_ethnicity) Santa!'
+# Create multiple Santas with random genders, ethnicities and a random age between 0 and 140.
+# Use methods: .times, do |block|, .sample
+# Items: example_genders and example_ethnicity arrays, random age generator
+# Print out attributes
 
 # -------------------------------------
 
@@ -16,7 +53,7 @@ class Santa
     @weight = weight
     @height = height
     @ethnicity = ethnicity
-    @age = Random.rand(0..140)
+    @age = Random.rand(0..140)  # previously age = 0
 
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 
@@ -53,6 +90,8 @@ class Santa
     puts "That was a good #{cookie}!"
   end
 
+  # Previous age method used until - Release 4 -
+
   # def age=(celebrate_birthday)
   #   @age = celebrate_birthday
   # end
@@ -67,6 +106,8 @@ class Santa
 
 
 end
+
+# RELEASE 1 & 2 CODE ------- >>>
 
 # santas = []
 
@@ -88,6 +129,10 @@ end
 #   p santa.get_mad_at("Rudolph")
 #   puts "----"
 # end
+
+# -----------------------------
+
+# RELEASE 4 CODE ----------->>>
 
  example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 
