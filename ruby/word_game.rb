@@ -43,3 +43,20 @@ puts ">>"
 game_word = gets.chomp
 
 game = WordGame.new(game_word)
+
+guessed_letters = []
+
+  until @attempts_remaining == 0
+    puts "Ok Player 2, Guess a letter! GO!!!"
+     letter_guess = gets.chomp
+        if guessed_letters.include? letter_guess
+          puts "You already guessed that letter! Enter a new one."
+          # I tried to add one back to the attempts_remaining but was unable to do so using the code below, and was unable to figure it out.
+          # @attempts_remaining == @attempts_remaining += 1
+        end
+    guessed_letters << letter_guess
+    game.guess_the_word(letter_guess)
+    if game.win? || game.lose?
+      break
+    end
+  end
