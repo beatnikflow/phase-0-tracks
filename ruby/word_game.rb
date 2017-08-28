@@ -1,9 +1,11 @@
 class WordGame
+
   def initialize(game_word)
-    @word = game_word.downcase
-    @guesses = [" "] * @word.size
-    @attempts_remaining = game_word.length - 2
+      @word = game_word.downcase
+      @guesses = ["_"] * @word.size
+      @attempts_remaining = game_word.length - 2
   end
+
 
   def guess_the_word(word_guess)
     word_guess.downcase
@@ -12,6 +14,7 @@ class WordGame
           @guesses[index] = word_guess
           p @guesses.join(" ")
         end
+
     end
 
     if !@word.include? (word_guess)
@@ -19,6 +22,7 @@ class WordGame
         @attempts_remaining -= 1
     end
   end
+
 
   def win?
     if !@guesses.include? ('_')
@@ -35,6 +39,8 @@ class WordGame
         true
     end
   end
+
+end
 
 puts "Welcome to the Word Guessing Game! Let's see if YOU have what it TAKES!!!"
 puts "Player 1... please enter a word for Player 2 to guess!"
@@ -60,3 +66,4 @@ guessed_letters = []
       break
     end
   end
+
