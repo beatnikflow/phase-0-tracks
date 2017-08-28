@@ -35,3 +35,11 @@ class WordGame
         true
     end
   end
+
+puts "Welcome to the Word Guessing Game! Let's see if YOU have what it TAKES!!!"
+puts "Player 1... please enter a word for Player 2 to guess!"
+puts ">>"
+
+game_word = gets.chomp
+
+game = WordGame.new(game_word)
