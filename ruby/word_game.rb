@@ -28,3 +28,10 @@ class WordGame
         false
     end
   end
+
+  def lose?
+    if @attempts_remaining == 0
+        puts "Just kidding... You lose!! (Word of Advice: Don't audition for Wheel of Fortune)"
+        true
+    end
+  end
