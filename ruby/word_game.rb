@@ -20,3 +20,11 @@ class WordGame
     end
   end
 
+  def win?
+    if !@guesses.include? ('_')
+        puts "Congratulations!!! You WON!!! You are the WORD MASTER!!!"
+        true
+    else
+        false
+    end
+  end
