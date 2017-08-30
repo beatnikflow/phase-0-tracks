@@ -14,6 +14,7 @@ function reverse(string) {
   for (var reverse_str = string.length - 1; reverse_str >= 0; reverse_str --)
     empty_str += string[reverse_str];
   if (empty_str == empty_str) {
-    return empty_str; }
+    console.log(empty_str); }
 }
+
 reverse("hello")
