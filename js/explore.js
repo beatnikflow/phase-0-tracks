@@ -13,7 +13,7 @@ function reverse(string) {
   var empty_str = '';
   for (var reverse_str = string.length - 1; reverse_str >= 0; reverse_str --)
     empty_str += string[reverse_str];
-  return empty_str;
+  if (empty_str == empty_str) {
+    return empty_str; }
 }
-
 reverse("hello")
