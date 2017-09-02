@@ -1,3 +1,5 @@
+// * RELEASE 0 *
+
 // Write a function that takes an array of words or phrases and returns the longest word or phrase in the array.
 
 // STEPS:
@@ -5,3 +7,16 @@
 // - Create a function that accesses the array and uses a length method to find out which word is the longest.
 // - Call the function to return the longest word.
 // - Add driver code that tests the function on a few arrays.
+
+// ------------------------------------------------------------------------ //
+
+
+var words = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"]
+
+function longestWord(words) {
+
+}
+
+console.log(longestWord(words))
+
+
