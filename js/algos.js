@@ -11,12 +11,39 @@
 // ------------------------------------------------------------------------ //
 
 
-var words = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"]
 
-function longestWord(words) {
+
+// wordArray = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"];
+// longestWord(wordArray);
+
+function longestWord(wordArray) {
+  wordArray = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"];
+  var longest = 0;
+
+  for (var i = 0; i < wordArray.length; i++) {
+    if (wordArray[i].length > longest) {
+      longest = wordArray[i];
+    }
+   }
+  }
+
+longestWord(wordArray);
+
+
+// * RELEASE 1 *
+
+// Write a function that takes two objects and checks to see if they have at least one key-value pair.
+
+// STEPS:
+// - Create function
+// - Create 2 objects to compare that have at least one same key-value pair.
+// - When function is called and 2 objects are passed as a parameter, the function is evaluated to true.
+
+// ------------------------------------------------
+
+function(objectSimilarity) {
+  var mushroom1 = {}
+  var mushroom2 = {}
 
 }
-
-console.log(longestWord(words))
-
 
