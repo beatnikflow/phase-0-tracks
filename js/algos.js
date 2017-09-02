@@ -53,7 +53,7 @@ function(objectSimilarity) {
   console.log(mushroom1[mushGenus]);
   console.log(mushroom2[mushGenus]);
 
-  if ();
+  if (mushroom1[mushGenus] == mushroom2[mushGenus]) || (mushroom1[mushSpecies]) == mushroom2[mushSpecies];
     objectSimilarity == true
   else
     objectSimilarity == false
