@@ -43,23 +43,14 @@ longestWord();
 
 // ------------------------------------------------
 
-function(objectSimilarity) {
-  var mushroom1 = {species: 'Muscaria', genus: 'Amanita'}
-  var mushroom2 = {species: 'Pantherina', genus: 'Amanita'}
+function mushroomObject(object1, object2) {
 
-  var mushSpecies = 'species';
-  var mushGenus = 'genus';
+    // console.log(object1.species);
 
-  console.log(mushroom1[mushSpecies]);
-  console.log(mushroom2[mushSpecies]);
-  console.log(mushroom1[mushGenus]);
-  console.log(mushroom2[mushGenus]);
-
-  if (mushroom1[mushGenus] == mushroom2[mushGenus]) || (mushroom1[mushSpecies]) == mushroom2[mushSpecies];
-    objectSimilarity == true
-  else
-    objectSimilarity == false
-
+    if (object1.species == object2.species || object1.genus == object2.genus) {
+        return true;
+    }
+    return false;
 }
 
-function(objectSimilarity)
+mushroomObject({species: 'Muscaria', genus: 'Amanita'}, {species: 'Pantherina', genus: 'Amanita'})
