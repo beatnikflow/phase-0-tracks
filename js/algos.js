@@ -16,18 +16,20 @@
 // wordArray = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"];
 // longestWord(wordArray);
 
-function longestWord(wordArray) {
-  wordArray = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"];
-  var longest = 0;
+function longestWord() {
+  var wordArray = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"];
+  var longest = wordArray[0];
 
   for (var i = 0; i < wordArray.length; i++) {
-    if (wordArray[i].length > longest) {
+    if (wordArray[i].length > longest.length) {
+
       longest = wordArray[i];
     }
    }
+   return longest;
   }
 
-longestWord(wordArray);
+longestWord();
 
 
 // * RELEASE 1 *
