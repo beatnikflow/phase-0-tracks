@@ -10,12 +10,6 @@
 
 // ------------------------------------------------------------------------ //
 
-
-
-
-// wordArray = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"];
-// longestWord(wordArray);
-
 function longestWord() {
   var wordArray = ["tacos", "burritos", "chimichangas", "enchiladas", "nachos"];
   var longest = wordArray[0];
@@ -31,6 +25,7 @@ function longestWord() {
 
 longestWord();
 
+// ------------------------------------------------
 
 // * RELEASE 1 *
 
@@ -54,3 +49,26 @@ function mushroomObject(object1, object2) {
 }
 
 mushroomObject({species: 'Muscaria', genus: 'Amanita'}, {species: 'Pantherina', genus: 'Amanita'})
+
+// -------------------------------------------------
+
+// * RELEASE 2 *
+
+// Write a function that takes an integer for length and builds and returns an array of strings of the given length.
+// - The words should be random varying length with a minimum of 1 letter to a maximum of 10 letters.
+// -Add driver code that does the following 10 times: generates an array, prints the array, and feeds the array to your longest word function and prints the result.
+
+// STEPS:
+// - Create a function that takes a number in as it's parameter.
+// - Create an empty array.
+// - Create a for loop to create a new string every time.
+//
+
+function randomWord(num) {
+  wordArray = [];
+
+  for (var i = 0; i < num; i++) {
+    var randomStringLength = Math.floor((Math.random() * 10) + 1);
+  }
+
+}
