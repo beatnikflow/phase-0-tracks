@@ -87,3 +87,9 @@ function randomWord(num) {
   }
 
 }
+
+randomWord(20);
+randomWord(5);
+randomWord(11);
+randomWord(17);
+randomWord(8);
