@@ -85,11 +85,29 @@ function randomWord(num) {
     }
     wordArray.push(str);
   }
-
+  return wordArray;
 }
 
-randomWord(20);
-randomWord(5);
-randomWord(11);
-randomWord(17);
-randomWord(8);
+// * Test randomWord function
+// randomWord(20);
+// randomWord(5);
+// randomWord(11);
+
+function longestWord() {
+  var longest = wordArray[0];
+
+  for (var i = 0; i < wordArray.length; i++) {
+    if (wordArray[i].length > longest.length) {
+
+      longest = wordArray[i];
+    }
+  }
+  return longest;
+  }
+
+// DRIVER CODE //
+var times = 10;
+  for (var i = 0; i < times; i++) {
+    console.log(randomWord(5));
+    console.log(longestWord());
+  }
