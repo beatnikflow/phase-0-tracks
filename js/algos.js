@@ -69,6 +69,12 @@ function randomWord(num) {
 
   for (var i = 0; i < num; i++) {
     var randomStringLength = Math.floor((Math.random() * 10) + 1);
+    var str = "";
+    for (var x = 0; x < randomStringLength; x++) {
+      var randomChar = alphaString[Math.floor((Math.random() * 26) + 1) - 1];
+      str = str + randomChar
+    }
+    wordArray.push(str);
   }
 
 }
