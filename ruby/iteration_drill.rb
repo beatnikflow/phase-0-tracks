@@ -7,15 +7,31 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 # printing each item in the array separated by an asterisk
 # ----
 
+zombie_apocalypse_supplies.each do |item|
+print "*"+ item
+end
+
 # 2. Create a method to see if a particular item (string) is in the
 # zombie_apocalypse_supplies using #each.
 # For instance: are boots in your list of supplies?
 # ----
 
+zombie_apocalypse_supplies.each do |item|
+p item.include?("boots")
+end
+
 # 3. You can't carry too many things, you've only got room in your pack for 5.
 # Remove items in your zombie_apocalypse_supplies in any way you'd like,
 # leaving only 5, using #each.
 # ----
+
+### ERROR MESSAGE
+zombie_apocalypse_supplies.each do |item|
+item.delete_at(0)
+end
+
+p zombie_apocalypse_supplies
+
 
 # 4. You found another survivor! This means you can combine your supplies.
 # Create a new combined supplies list out of your zombie_apocalypse_supplies
@@ -24,6 +40,15 @@ zombie_apocalypse_supplies = ["hatchet", "rations", "water jug", "binoculars",
 # documentation for Arrays.
 other_survivor_supplies = [ "warm clothes", "rations", "compass", "camp stove",
                             "solar battery", "flashlight"]
+
+combined_supplies = zombie_apocalypse_supplies + other_survivor_supplies
+
+p combined_supplies
+
+combined_supplies.uniq!
+
+p combined_supplies
+
 # ----
 
 # Hash Drills
@@ -41,6 +66,10 @@ extinct_animals = {
 # 1. Iterate through extinct_animals hash using #each, printing each key/value pair
 # with a dash in between the key and value, and an asterisk between each pair.
 # ----
+
+extinct_animals.each do |key, value|
+  print " * #{key} - #{value}"
+end
 
 # 2. Keep only animals in extinct_animals if they were extinct before
 # the year 2000, using #each.
