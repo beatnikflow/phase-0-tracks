@@ -75,10 +75,24 @@ end
 # the year 2000, using #each.
 # ----
 
+# HELP!
+extinct_animals.each do |value|
+  keep_if { |value| > 2000 }
+end
+
 # 3. Our calculations were completely off, turns out all of those animals went
 # extinct 3 years before the date provided. Update the values in extinct_animals
 # using #each, so they accurately reflect what year the animal went extinct.
 # ----
+
+extinct_animals.each { |key, value| extinct_animals["Passenger Pigeon"] = 1911 }
+extinct_animals.each { |key, value| extinct_animals["Tasmanian Tiger"] = 1933 }
+extinct_animals.each { |key, value| extinct_animals["Eastern Hare Wallaby"] = 1887 }
+extinct_animals.each { |key, value| extinct_animals["Dodo"] = 1659 }
+extinct_animals.each { |key, value| extinct_animals["Pyrenean Ibex"] = 1997 }
+extinct_animals.each { |key, value| extinct_animals["West African Black Rhinoceros"] = 2008 }
+extinct_animals.each { |key, value| extinct_animals["Laysan Crake"] = 1920 }
+
 
 # 4. You've heard that the following animals might be extinct, but you're not sure.
 # Build a method  using #each that checks if an animal is in the hash and returns true/false.
@@ -88,6 +102,11 @@ end
 # "Dodo"
 # "Saiga Antelope"
 # Driver code example: is_extinct?(extinct_animals, "Andean Cat")
+
+extinct_animals.each do |key|
+  extinct_animals.has_key?("Andean Cat")
+end
+
 # ----
 
 # 5. We just found out that the Passenger Pigeon is actually not extinct!
