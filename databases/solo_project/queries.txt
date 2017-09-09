@@ -1,0 +1,140 @@
+
+
+
+
+1. Display the information in one table (either table is fine).
+
+# INPUT:
+
+SELECT * FROM genus;
+
+# OUTPUT: 
+
+1|Amanita
+2|Agaricus
+3|Boletus
+4|Tricholoma
+
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+# Updating species Boletus nickname where name equals "Edulis". (There are 2 nicknames). Previously labeled with one nickname: "Porcini", and adding "King Bolete".
+
+# INPUT: 
+
+UPDATE species SET nickname="King Bolete or Porcini" WHERE name="Edulis";
+
+# OUTPUT: 
+
+9|Edulis|King Bolete or Porcini|true|6|25|8|20|Pores, small, whitish at first, becoming yellow or olive yellow in age, not bluing when bruised|Olive brown, elliptical to spindle shaped, smooth|3
+
+
+
+3. Display the information in both tables using one query.
+
+# INPUT: 
+
+SELECT * FROM genus, species WHERE species.genus_id = genus.id;
+
+# OUTPUT: 
+
+1|Amanita|1|Jacksonii|Southwest Caesar|true|6|20|6|20|Adnexed to free, bright yellow|White, elliptical, smooth, inamyloid|1
+
+2|Agaricus|2|Arvensis|Horse Mushroom|true|7|20|5|12|Free, white at first, becoming dark brown with age|Chocolate brown, elliptical, smooth|2
+
+4|Tricholoma|3|Equestre|Man on Horseback|false|5|15|4|10|Notched, close, yellow|White, elliptical, smooth|4
+
+3|Boletus|4|Eastwoodiae|Satan's Bolete|false|10|25|7|15|Red pores, becoming orange in age, bruising blue|Olive brown, elliptical, smooth|3
+
+2|Agaricus|5|Augustus|The Prince|true|8|30|7|30|Free, whitish at first, then pink, then becoming chocolate brown|Chocolate brown, elliptical, smooth|2
+
+1|Amanita|6|Muscaria|Fly Agaric|false|8|30|6|16|Adnexed to free, close, white|White, elliptical, smooth, inamyloid|1
+
+4|Tricholoma|7|Magnivelare|Matsutake|true|5|20|4|15|Adnate to notched, white, developing brown stains in age, crowded|White, elliptical, smooth|4
+
+1|Amanita|8|Ocreata|Destroying Angel|false|5|15|6|20|Adnexed to free, close, white|White, elliptical, smooth, amyloid|1
+
+3|Boletus|9|Edulis|King Bolete or Porcini|true|6|25|8|20|Pores, small, whitish at first, becoming yellow or olive yellow in age, not bluing when bruised|Olive brown, elliptical to spindle shaped, smooth|3
+
+4|Tricholoma|10|Pardinum|Tiger Tricholoma|false|5|15|4|12|Notched, whitish to cream colored|White, elliptical, smooth, inamyloid|4
+
+2|Agaricus|11|Subrutilescens|Wine-colored Agaricus|true|5|15|5|15|Free, white, becoming pink and then finally chocolate brown|Chocolate brown, elliptical, smooth|2
+
+1|Amanita|12|Pantherina|Panther Cap|false|5|18|5|15|Adnexed to free, close, white but off-white to yellowish in age|White, elliptical, smooth, inamyloid|1
+
+3|Boletus|13|Regineus|Queen Bolete|true|5|18|5|15|Pores, small, whitish at first, becoming yellow or olive yellow in age, not bluing when bruised|Olive brown, elliptical to spindle shaped, smooth|3
+
+4|Tricholoma|14|Saponaceum|Soapy Tricholoma|false|4|15|4|12|Notched, white or cream colored|White, elliptical, smooth, inamyloid|4
+
+1|Amanita|15|Phalloides|Death Cap|false|5|15|5|18|Free, close, white|White, elliptical, smooth, amyloid|1
+
+
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+# INPUT: 
+
+SELECT genus.name, species.name FROM genus JOIN species ON genus.id = species.genus_id;
+
+# OUTPUT:
+
+Amanita|Jacksonii
+Agaricus|Arvensis
+Tricholoma|Equestre
+Boletus|Eastwoodiae
+Agaricus|Augustus
+Amanita|Muscaria
+Tricholoma|Magnivelare
+Amanita|Ocreata
+Boletus|Edulis
+Tricholoma|Pardinum
+Agaricus|Subrutilescens
+Amanita|Pantherina
+Boletus|Regineus
+Tricholoma|Saponaceum
+Amanita|Phalloides
+
+
+
+6. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+# There's too many Amanita species listed, so let's delete the Amanita species where the name is "Pantherina". 
+
+# INPUT:
+
+DELETE FROM species WHERE name="Pantherina";
+
+# OUTPUT of updated species list: 
+
+SELECT * FROM species; 
+
+1|Jacksonii|Southwest Caesar|true|6|20|6|20|Adnexed to free, bright yellow|White, elliptical, smooth, inamyloid|1
+
+2|Arvensis|Horse Mushroom|true|7|20|5|12|Free, white at first, becoming dark brown with age|Chocolate brown, elliptical, smooth|2
+
+3|Equestre|Man on Horseback|false|5|15|4|10|Notched, close, yellow|White, elliptical, smooth|4
+
+4|Eastwoodiae|Satan's Bolete|false|10|25|7|15|Red pores, becoming orange in age, bruising blue|Olive brown, elliptical, smooth|3
+
+5|Augustus|The Prince|true|8|30|7|30|Free, whitish at first, then pink, then becoming chocolate brown|Chocolate brown, elliptical, smooth|2
+
+6|Muscaria|Fly Agaric|false|8|30|6|16|Adnexed to free, close, white|White, elliptical, smooth, inamyloid|1
+
+7|Magnivelare|Matsutake|true|5|20|4|15|Adnate to notched, white, developing brown stains in age, crowded|White, elliptical, smooth|4
+
+8|Ocreata|Destroying Angel|false|5|15|6|20|Adnexed to free, close, white|White, elliptical, smooth, amyloid|1
+
+9|Edulis|King Bolete or Porcini|true|6|25|8|20|Pores, small, whitish at first, becoming yellow or olive yellow in age, not bluing when bruised|Olive brown, elliptical to spindle shaped, smooth|3
+
+10|Pardinum|Tiger Tricholoma|false|5|15|4|12|Notched, whitish to cream colored|White, elliptical, smooth, inamyloid|4
+
+11|Subrutilescens|Wine-colored Agaricus|true|5|15|5|15|Free, white, becoming pink and then finally chocolate brown|Chocolate brown, elliptical, smooth|2
+
+13|Regineus|Queen Bolete|true|5|18|5|15|Pores, small, whitish at first, becoming yellow or olive yellow in age, not bluing when bruised|Olive brown, elliptical to spindle shaped, smooth|3
+
+14|Saponaceum|Soapy Tricholoma|false|4|15|4|12|Notched, white or cream colored|White, elliptical, smooth, inamyloid|4
+
+15|Phalloides|Death Cap|false|5|15|5|18|Free, close, white|White, elliptical, smooth, amyloid|1
+
+
+# AMANITA PANTHERINA NOW DELETED WHERE PRIMARY KEY 12. 
