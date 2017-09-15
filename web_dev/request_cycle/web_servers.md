@@ -1,3 +1,5 @@
 1. What are some of the key design philosophies of the Linux operating system?
+    - The linux software model does not abide by an entire concept of organized development, structured bug reporting, or source control systems. It is designed with an open-ended, feature-minded approach. There is no 'one' organization responsible for the development of Linux. Anyone has the opportunity to help develop and debug the "kernel" which is the central component of the operating system. One can also port new software, write documentation and help new users. A new version of the kernel is released every few weeks and is written from scratch, without code from other proprietary sources. This is all volunteer based, and because of this, Linux development is about free UNIX implementation. 
+
 2. In your own words, what is a VPS (virtual private server)? What, according to your research, are the advantages of using a VPS?
 3. Why is it considered a bad idea to run programs as the root user on a Linux system?
