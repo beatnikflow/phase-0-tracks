@@ -6,3 +6,4 @@
 
 
 3. Why is it considered a bad idea to run programs as the root user on a Linux system?
+    - It is considered a bad idea to run programs as the ROOT user because it can compromise the security of your server. Applications are meant to be run with non-administrative security. You wouldn't want any kind of crash or bug to wipe out your directory or accidentally allow an attacker to gain a ROOT shell. Applications should be ran on a user level, with administrative tasks left to the ROOT user on an as-needed basis. 
