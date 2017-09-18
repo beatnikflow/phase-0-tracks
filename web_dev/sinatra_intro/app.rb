@@ -58,4 +58,6 @@ get '/great_job/:name' do
       "Good job, #{name}!"
   else
       "Good job!"
+  end
 end
+
